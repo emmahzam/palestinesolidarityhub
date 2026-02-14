@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Palestine Solidarity Hub</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/script.js"></script>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Palestine Solidarity Hub Logo" height="85">
+                Palestine Solidarity Hub
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="campaigns.html">Campaigns</a></li>
+                <li><a href="contact.html"class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="hero-content">
+    <h1>Contact Us</h1>
+    <p>Questions, partnerships, or volunteer inquiries? Reach out to us.</p>
+  </div>
+</section>
+
+<section class="section-light">
+<div class="container card">
+<form name="contactForm" onsubmit="return validateForm()" method="post">
+
+<input type="text" name="name" placeholder="Full Name" required>
+<input type="email" name="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+
+<select name="subject">
+<option value="volunteer">Volunteer</option>
+<option value="donate">Donation</option>
+<option value="partnership">Partnership</option>
+</select>
+
+<textarea name="message" maxlength="300" placeholder="Your Message"></textarea>
+
+<button type="submit" class="btn">Send Message</button>
+</form>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Palestine Solidarity Hub | Email: solidarity@psh.org</p>
+<div class="socials">
+<a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+</div>
+</footer>
+
+</body>
+</html>

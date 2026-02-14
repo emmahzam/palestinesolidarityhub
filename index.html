@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palestine Solidarity Hub</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="Palestine Solidarity Hub Logo" height="85">
+                Palestine Solidarity Hub
+            </div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="campaigns.html">Campaigns</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Justice. Dignity. Freedom.</h1>
+        <p id="ticker" class="ticker">Standing in solidarity through awareness, advocacy, and action.</p>
+        <a href="campaigns.html" class="btn btn-hero">Get Involved</a>
+    </div>
+</section>
+
+<!-- ================= BENTO GRID ================= -->
+<section class="bento-section">
+    <div class="container grid-bento">
+        <div class="bento-card">
+            <img src="images/advocacy.webp" alt="Advocacy">
+            <h3>📢 Advocacy</h3>
+            <p>Peaceful campaigns and educational outreach worldwide.</p>
+            <a href="about.html" class="btn-small">Learn More</a>
+        </div>
+
+        <div class="bento-card">
+            <img src="images/community.webp" alt="Community">
+            <h3>🤝 Community</h3>
+            <p>Connect with individuals and organizations committed to justice.</p>
+            <a href="about.html" class="btn-small">Learn More</a>
+        </div>
+
+        <div class="bento-card">
+            <img src="images/aid.jpg" alt="Humanitarian Aid">
+            <h3>❤️ Humanitarian Aid</h3>
+            <p>Supporting emergency relief and critical resources to communities.</p>
+            <a href="campaigns.html" class="btn-small">Donate</a>
+        </div>
+
+        <div class="bento-card">
+            <h3>📰 Latest News</h3>
+            <p>Updates, press releases, and solidarity events worldwide.</p>
+            <a href="news.html" class="btn-small">Read News</a>
+        </div>
+
+        <div class="bento-card">
+            <h3>⏰ Upcoming Event</h3>
+            <p>Global Online Awareness Conference</p>
+            <div id="countdown" class="countdown-box"></div>
+        </div>
+
+        <div class="bento-card">
+            <h3>📚 Resources</h3>
+            <p>Educational articles, PDFs, and research papers about Palestine.</p>
+            <a href="resources.html" class="btn-small">Explore</a>
+        </div>
+    </div>
+</section>
+
+<!-- ================= DONATION CALCULATOR ================= -->
+<section class="section-light">
+    <div class="container card">
+        <h2>Calculate Your Impact</h2>
+        <input type="number" id="donationAmount" placeholder="Enter donation amount" required>
+        <button onclick="calculateDonation()" class="btn">Calculate</button>
+        <p id="impactResult"></p>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <p>© 2026 Palestine Solidarity Hub | Email: solidarity@psh.org</p>
+    <div class="socials">
+        <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+    </div>
+</footer>
+
+</body>
+</html>
