@@ -74,9 +74,9 @@ header ul li a.active {
 }
 
 /* ================= HERO ================= */
-.hero {
+.page-hero {
   width: 100%;
-  padding: 120px 20px 70px; /* bawah lebih besar untuk bagi ruang */
+  padding: 100px 20px 100px; /* bawah besar sikit */
   text-align: center;
 }
 
@@ -113,13 +113,15 @@ header ul li a.active {
 }
 
 .bento-card {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.75); /* dari solid putih jadi nipis */
+  backdrop-filter: blur(6px); /* bagi glass effect sikit */
   border-radius: 15px;
   padding: 25px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08); /* shadow lembut */
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .bento-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 25px rgba(0,0,0,0.15);
@@ -140,8 +142,13 @@ header ul li a.active {
 /* Section Light & Card */
 .section-light {
   background: #f9f9f9;
-  padding: 100px 10px;
+  padding: 60px 20px;   /* sebelum ni besar sangat */
 }
+
+.section-dark {
+  margin: 100px 0;   /* atas & bawah ada jarak */
+}
+
 
 .card {
   max-width: 800px;
@@ -220,6 +227,14 @@ tr:nth-child(even){background:#f9f9f9;}
   td::before{content:attr(data-label);position:absolute;left:15px;font-weight:bold;}
 }
 
+audio {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  max-width: 400px;  /* kecil sikit supaya tak nampak tebal */
+}
+
+
 /* Footer */
 footer {
   background:#222;color:#fff;text-align:center;padding:25px 20px;margin-top:50px;width:100%;
@@ -227,4 +242,5 @@ footer {
 footer a { color:#fff;text-decoration:none;transition:0.3s; }
 footer a:hover { color:#4CAF50; }
 footer .socials { margin-top:10px;font-size:14px; }
+
 
