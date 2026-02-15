@@ -139,14 +139,20 @@ header ul li a.active {
   margin-top: -80px;  /* tarik sikit supaya nampak smooth */
 }
 
-/* Section Light & Card */
+/* ================= SECTION-LIGHT (for About & Campaigns) ================= */
 .section-light {
-  background: #f9f9f9;
-  padding: 60px 20px;   /* sebelum ni besar sangat */
+  background: rgba(128, 8, 28, 0.788);   /* merah dengan opacity 0.15 → sangat ringan */
+  padding: 60px 20px;
 }
 
 .section-dark {
   margin: 100px 0;   /* atas & bawah ada jarak */
+}
+
+.section-light .container {
+  background: #fff;       /* bento cards tetap putih */
+  padding: 60px;
+  border-radius: 24px;
 }
 
 
@@ -234,6 +240,21 @@ audio {
   max-width: 400px;  /* kecil sikit supaya tak nampak tebal */
 }
 
+/* ================= NEWS PAGE SPECIFIC ================= */
+.news-page .section-light {
+  background: transparent;     /* buang background full-width */
+  padding: 80px 20px;          /* control height */
+}
+.news-page .section-light + .section-light {
+  margin-top: 100px;
+}
+
+.news-page .section-light .container {
+  background: #f9f9f9;         /* bg white card floating */
+  padding: 60px;
+  border-radius: 24px;
+}
+
 
 /* Footer */
 footer {
@@ -242,5 +263,6 @@ footer {
 footer a { color:#fff;text-decoration:none;transition:0.3s; }
 footer a:hover { color:#4CAF50; }
 footer .socials { margin-top:10px;font-size:14px; }
+
 
 
