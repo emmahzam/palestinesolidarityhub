@@ -73,24 +73,24 @@ header ul li a.active {
     background: #4CAF50;
 }
 
-/* Hero */
-.page-hero {
+/* ================= HERO ================= */
+.hero {
   width: 100%;
-  background: url(../images/your-bg-photo.jpg) no-repeat center center;
-  background-size: cover;
-  padding: 60px 20px;
+  padding: 120px 20px 70px; /* bawah lebih besar untuk bagi ruang */
   text-align: center;
 }
+
 .hero-content {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.85);
-  padding: 30px 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
   animation: fadeInUp 1s ease forwards;
 }
+
 @keyframes fadeInUp {
   0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
@@ -109,9 +109,9 @@ header ul li a.active {
 .grid-bento {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  margin-bottom: 40px;
+  gap: 35px;
 }
+
 .bento-card {
   background: #fff;
   border-radius: 15px;
@@ -131,12 +131,18 @@ header ul li a.active {
   border-radius: 10px;
   margin-bottom: 15px;
 }
+/* ================= BENTO SECTION ================= */
+.bento-section {
+  padding: 120px 0;   /* bagi ruang atas & bawah */
+  margin-top: -80px;  /* tarik sikit supaya nampak smooth */
+}
 
 /* Section Light & Card */
 .section-light {
   background: #f9f9f9;
-  padding: 50px 20px;
+  padding: 100px 10px;
 }
+
 .card {
   max-width: 800px;
   width: 100%;
@@ -221,3 +227,4 @@ footer {
 footer a { color:#fff;text-decoration:none;transition:0.3s; }
 footer a:hover { color:#4CAF50; }
 footer .socials { margin-top:10px;font-size:14px; }
+
